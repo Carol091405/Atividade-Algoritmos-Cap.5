@@ -10,6 +10,7 @@ int main(){
     while (c<11)
     {
         e=m*c;
+        printf("%d*%d=", m,c);
         printf("%d\n", e);
         c++;
     }

@@ -9,9 +9,9 @@ int main(){
 
     for (x=0;x<=e; x++)
     {
-       t=b*b
+       t=b*b;
     }
-    
+    printf("Resultado da exponeciacao:%d", t);
 
    
     
