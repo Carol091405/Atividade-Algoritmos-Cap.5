@@ -7,15 +7,11 @@ int main(){
     scanf("%d", &b);
     scanf("%d", &e);
 
-    for (x=0;x<=e; x++)
+    for (x=0;x<e; x++)
     {
        t=b*b;
     }
     printf("Resultado da exponeciacao:%d", t);
-
-   
-    
-    
-
+    return 0;
 }
    

@@ -8,7 +8,7 @@ int main(){
     {
         if (a%2==0)
         {
-            b=b+a;
+            b+=a;
         }
     }
     printf("Soma dos pares na faixa de 50 a 70:%d\n", b);

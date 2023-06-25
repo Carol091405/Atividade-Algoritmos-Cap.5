@@ -2,21 +2,27 @@
 #include <math.h>
 
 int main(){
-    float a,s,i;
-    s=0;
+    float a,s=0,q=0,m;
+    
     printf("Para finalizar o calculo, digite um numero negativo!\n");
     printf("Digite os numeros positivos que deseja:\n");
     
-    for (i=0;i>=0;i++)
+   for (;;)
+   {
+    scanf("%f", &a);
+    if (a<0)
     {
-        scanf("f", &i);
-        if(a>0)
-    {
-        scanf("%f", &a);
-    }
-    else{
         break;
     }
-    }
-    
+    q++;
+    s+=a;
+   }
+   if (q>0)
+   {
+    m=s/q;
+    printf("Quantidade de numeros inseridos:%.2f\n", q);
+    printf("Somatorio:%.2f\n", s);
+    printf("Media:%.2f", m);
+   }
+   return 0;
 }

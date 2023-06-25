@@ -2,14 +2,20 @@
 #include <math.h>
 
 int main(){
-    int fat, i;
+    int fat,i;
 
-    for (fat; i > 1; i = i - 1)
+    for ( i = 1; i < 11; i++)
     {
         if (i%2!=0)
         {
-            fat=fat*i;
-            printf("%d ", fat);
+            fat=1;
+            for ( int h = i; h > 0; h--)
+            {
+                fat*=h;
+            }
+            printf("O fatorial do numero %d equivale a:%d\n", i, fat);
+            
+            
         }
         
     }
